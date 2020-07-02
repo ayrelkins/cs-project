@@ -149,3 +149,9 @@ mySprite = sprites.create(img`
 mySprite.x = 2
 mySprite.y = 54
 music.baDing.play()
+forever(function () {
+    for (let index = 0; index < 1e+207; index++) {
+        mySprite.y += 1
+        mySprite.y += -1
+    }
+})
